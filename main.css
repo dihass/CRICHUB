@@ -1,0 +1,327 @@
+
+*{
+    font-family: "Roboto",sans-serif;
+}
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(images/pic1.jpg);
+    
+    opacity: 1;
+    height:100vh;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+.main-page h1 {
+    color: #f0f0f0;
+}
+@media screen and (max-width: 768px) {
+    .main-page {
+      height: 100%;
+      min-height: 100vh;
+      background-position: top;
+      vertical-align:center;
+      object-fit:contain
+    }
+  }
+
+  .title {
+    position: relative;
+    background-image: url('path/to/my-image.jpg');
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+ }
+ 
+ .title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+ }
+ 
+ .title h1 {
+    font-family: "Montserrat",sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px black;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize
+ }
+ .shop-button {
+  text-decoration: none;
+ }
+ .main-button{
+    height:40px;
+    width:30%;
+    border: none;
+    outline: none;
+    background:red;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+ }
+ .main-button:hover{
+    background: orange;
+    color: black;
+    border-radius: 10px;
+ }
+ .main-button:active{
+    opacity: 0.5;
+ }
+
+
+
+
+
+
+
+
+.img-grid-text {
+    text-align: center;
+    margin: 50px 0 30px;
+  }
+  
+  .img-grid-text p {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333;
+    background-color: #f0f0f0;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .image-grid .img1,
+  .image-grid .img2,
+  .image-grid .img3,
+  .image-grid .img4 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .image-grid .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-grid .overlay .text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .image-grid .img1:hover img,
+  .image-grid .img2:hover img,
+  .image-grid .img3:hover img,
+  .image-grid .img4:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .image-grid .img1:hover .overlay,
+  .image-grid .img2:hover .overlay,
+  .image-grid .img3:hover .overlay,
+  .image-grid .img4:hover .overlay {
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .img-grid-text p {
+      font-size: 22px;
+    }
+    .image-grid {
+        grid-template-columns: 1fr;
+      }
+}
+  
+  
+
+
+.qoutebox {
+    display: grid;
+    align-items: right;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 10px;
+    width: 100%;
+    height: 360px;
+    background-color: #f0f0f0;
+    
+}
+.qoute{
+    display: grid;
+    justify-content: center;
+    align-items: right;
+    padding-right:0;
+    
+}
+.qoutebox .qoute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding-left: 30%;
+    text-align: center;
+    height: 35%;
+    float: left;
+    }
+
+.qoutebox .qoutepic {
+    height: 35%;
+    
+   
+
+}
+.qoutepic img{
+    height: 100%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+@media only screen and (max-width: 600px) {
+    .qoutebox {
+      
+      width: 100%;
+      padding: 0;
+      grid-gap: 0;
+      max-height: 25%;
+      height: auto;
+    }
+  
+    .qoutebox .qoute {
+      height: auto;
+      padding: 5% 10%;
+    }
+  
+    .qoutebox .qoutepic {
+      height: auto;
+    }
+  
+    .qoutepic img {
+      margin-right: 0;
+      margin-bottom: 10px;
+      display: grid;
+      justify-content: center;
+      float: right;
+      width: 85%;
+      height: auto;
+      margin: 0 0 0 0;
+    }
+    .qoutepic{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .qoute p{
+      font-size: 18px;
+    }
+  }
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(images/img4.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.formbox h1 {
+    color: #f0f0f0;
+}
+.formbox-content .button {
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:orange;
+    display: flex;
+    margin:0 auto;
+    border-style:none ;
+    font-family: 'Roboto',sans-serif;
+    transition: 300ms;
+}
+.formbox-content  a {
+    text-decoration: none;
+    color: black;
+}
+.formbox-content .button:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.8) ;
+}
+.formbox-content .button:active{
+    opacity: 0.7;
+}
+.button{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+/* styles for screens with a maximum width of 768px */
+@media screen and (max-width: 700px) {
+    .formbox {
+      height: 400px; /* decrease height for smaller screens */
+      text-align: center;
+    }
+    
+    .formbox-content .button {
+      font-size: 14px; /* decrease font size for smaller screens */
+    }
+  }
+.msg textarea {
+    color: white;
+}

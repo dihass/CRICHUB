@@ -1,0 +1,33 @@
+body{
+    background-image: url("img/bg3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .photo{
+	position:relative;
+	right:300px;
+	margin-top: 50px;
+	top: 0px;
+	width: 400px;
+	height: 600px;
+	object-fit: cover;
+	margin-bottom: 100px;
+}
+
+.list{
+	padding:10px;
+}
+
+.info{
+    color: wheat;
+	position: relative;
+	left:700px;
+	top:100px;
+	font-size: 20px;
+	padding:20px;
+	width:fit-content;
+	float: left;
+}

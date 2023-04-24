@@ -1,0 +1,245 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+.background-slider {
+	overflow: hidden;
+	width: auto;
+	height: 100vh;
+	position: relative;
+   }
+	
+   .background-slider .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	animation: background-slider 12.5s infinite;
+   }
+	
+   .background-slider .slide:nth-child(1) {
+	  background-image: url('images/slider-img1.jpg');
+	  animation-delay: 0s;
+   }
+   
+   .background-slider .slide:nth-child(2) {
+	  background-image: url('images/slider-img2.jpg');
+	  animation-delay: -2.5s;
+   }
+   
+   .background-slider .slide:nth-child(3) {
+	  background-image: url('images/slider-img3.jpg');
+	  animation-delay: -5s;
+   }
+   
+   .background-slider .slide:nth-child(4) {
+	  background-image: url('images/slider-img4.jpg');
+	  animation-delay: -7.5s;
+   }
+   
+   .background-slider .slide:nth-child(5) {
+	  background-image: url('images/slider-img5.jpg');
+	  animation-delay: -10s;
+   }
+   
+   @keyframes background-slider {
+	0%, 16%, 100% {
+	  transform: translateX(0);
+	  animation-timing-function: ease;
+	}
+	20% {
+	  transform: translateX(-100%);
+	  animation-timing-function: step-end;
+	}
+	96% {
+	  transform: translateX(100%);
+	  animation-timing-function: ease;
+	}
+   }
+
+.aboutinfo{
+	background-color:wheat;
+	padding: 20px;
+	text-align: justify;
+	border-radius: 40px;
+	margin-top: 5%;
+	font-size: 20px;
+}
+.aboutinfo h1{
+	text-align: center;
+	text-transform: capitalize;;
+}
+
+
+
+
+
+
+
+.virat-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+	background-color: #f0f0f0;
+	margin-bottom: 50px;
+	padding-bottom: 25px;
+  }
+  
+  .left-side {
+	width: 75%;
+	padding: 20px;
+	
+  }
+  
+  .left-side h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+  }
+  
+  .right-side {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	padding-left: 10%;
+	overflow: hidden;
+  }
+  
+  .right-side img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  }
+  .right-side img:hover {
+	transform: scale(1.1);
+	filter: brightness(110%);
+  }
+  .key-info-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-gap: 20px;
+	margin-top: 30px;
+  }
+  
+  .key-info-grid div {
+	background-color: #f0f0f0;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .key-info-grid div:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .key-info-grid div h2 {
+	margin: 0;
+	font-size: 20px;
+	text-align: center;
+  }
+  
+  .key-info-grid div p {
+	margin: 10px 0 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+  }
+.conclusion .button,
+.about-social .button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 18px;
+	background-color:black;
+    color:white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    margin-left:8px;
+    transition: opacity 0.2s;
+    vertical-align: top;
+	border-radius: 10px;
+	transition: 300ms;
+	
+}
+.conclusion .button a ,
+.about-social .button a{
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.conclusion .button:hover,
+.about-social .button:hover{
+	background-color: red;
+}
+.conclusion .button:active,
+.about-social .button:active{
+	opacity: 0.5;
+}
+
+.about-social{
+	margin-bottom: 30px;
+	display: block;
+  	width: 90%;
+  	height: fit-content;
+  	border: 1px solid #ccc;
+  	padding: 20px;
+  	text-align: justify;
+	font-size: 20px;
+	margin-left: 3%;
+	background-color: #f0f0f0;
+}
+.about-social h2{
+	text-align: center;
+}
+.social-buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.conclusion{
+	margin-bottom: 30px;
+	display: block;
+  	width: 90%;
+  	height: fit-content;
+  	border: 1px solid #ccc;
+  	padding: 20px;
+  	text-align: justify;
+	font-size: 20px;
+	margin-left: 3%;
+	background-color: #f0f0f0;
+}
+.conclusion h2{
+	text-align: center;
+}
+
+.backtotop{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+	.right-side {
+		width: 20% ;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		padding: 0;
+	}
+}	

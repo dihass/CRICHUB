@@ -1,0 +1,159 @@
+
+.container {
+    display: inline-flex;
+}
+.logo{
+    font-family:"Monstserrat",sans-serif;
+    color: white;
+    display: inline-flex;
+}
+.logoimage{
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+}
+header{
+    background:black;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+nav{
+    position: absolute;
+    text-align:left;;
+    top:100%;
+    left:0;
+    background-color:black;
+    width: 100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 0.4s ease-in-out;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
+    list-style: none;
+}
+nav a{
+    color: white
+    ;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out ;
+}
+nav a:hover{
+    color: orange;
+
+}
+.nav_toggle:checked~nav{
+    transform: scale(1,1);   
+}
+.nav_toggle{
+    display: none;
+}
+.checkbox{
+    color:white;
+    position: absolute;
+    top:0;
+    left: 10px;
+    margin-top: 35px;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.checkbox,
+.checkbox::before,
+.checkbox::after{
+    display: block;
+    background:white;
+    height: 2px;
+    width:2em;
+    border-radius:2px;
+}
+.checkbox::before,
+.checkbox::after{
+    content: "";
+    position: absolute;
+}
+.checkbox::before{
+    bottom:8px
+}
+.checkbox::after{
+    top:8px
+}
+.nav_toggle:checked~nav a{
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out 0.25s;
+}
+@media screen and (min-width: 850px){
+    .img_logo{
+        justify-content: flex-start;
+    }
+    .checkbox {
+        display: none;
+    }
+    header{
+        display:grid;
+        grid-template-columns: 1fr auto minmax(600px,3fr) 1fr;
+    }
+    .logo{
+        grid-column: 2/ 1;
+    }
+    nav{
+        all: unset;
+        grid-column: 3/ 6;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav li{
+        margin-top: 10px;
+
+        
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+        padding: 14px 16px;
+        transition: background-color 0.3s;
+    }
+    nav a.active{
+        border-radius: 10%;
+        background-color:red;
+    }
+    nav a.active:hover{
+        color: black;
+        background-color: orange;
+        border-radius: 10%;
+    }
+    nav a::before{
+        content: '';
+        display: block;
+        height: 5px;
+        background:gray;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.75em;
+        transform:scale(0,1);
+        transition: transform ease-in-out 250ms ;
+    }
+    nav a:hover::before{
+        transform:scale(1,1);
+    }
+}

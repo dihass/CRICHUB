@@ -1,0 +1,186 @@
+body {
+  background-color: #211d1d;
+  font-family: sans-serif;
+  font-size: 17px;
+  padding: 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(157, 157, 157);
+  transition: 0.3s;
+  width: 50%;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  height: 90vh;
+  animation-name: anime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anime {
+  from {
+    opacity: 0%;
+    transform: skewX(100deg, 100deg);
+  }
+
+  to {
+    opacity: 100%;
+    transform: skewX(0deg, 0deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+.center {
+  text-align: center;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #cbc8c8;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.6s;
+}
+
+.btn:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: black;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* popup */
+.modal-content {
+  background-color: black;
+  color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 2s;
+}
+
+/* Add Animation */
+
+@keyframes mymove {
+  0% {
+    top: 100px;
+  }
+  25% {
+    top: 0px;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(96, 1, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  color: #2196f3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

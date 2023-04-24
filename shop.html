@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP CENTER</title>
+    <link rel="stylesheet" href="shop.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/pageicon.png" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
+    <div class="header">
+      <div class="nav nv">
+        <i class="bx bxs-cart" id="cart-icon" title="cart"></i>
+
+        <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <div class="cart-content"></div>
+
+          <!--TOTAL-->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div id="totalSomething" class="total-price">$0</div>
+          </div>
+
+          <!--BUY BUTTON-->
+          <button type="button" class="btn-buy">Buy Now</button>
+
+          <!--CART CLOSE-->
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
+      </div>
+    </div>
+
+    <section class="shop-container">
+      <div class="shoping-center">
+        <h2 class="section-title">Shopping</h2>
+        <h2 class="section-title" id="section-title-center">Center</h2>
+      </div>
+
+      <div class="shop-content">
+        <!--box 1-->
+        <div class="product-box">
+          <img src="img/bat1.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas Pellara 5.0</h2>
+          <span class="price">$250</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 2-->
+        <div class="product-box">
+          <img src="img/bat2.jpg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas Pellara 4.0</h2>
+          <span class="price">$255</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 3-->
+        <div class="product-box">
+          <img src="img/bat3.jpg" alt="" class="product-img" />
+          <h2 class="product-title">MRF Legend VK 18 2.0</h2>
+          <span class="price">$155</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 4-->
+        <div class="product-box">
+          <img src="img/bat4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">MRF Legend VK 18 1.0</h2>
+          <span class="price">$300</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 5-->
+        <div class="product-box">
+          <img src="img/bat5.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra Ghost</h2>
+          <span class="price">$200</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 6-->
+        <div class="product-box">
+          <img src="img/bat6.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra Kahuna</h2>
+          <span class="price">$100</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 7-->
+        <div class="product-box">
+          <img src="img/bat7.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Hammer CANNON XL</h2>
+          <span class="price">$90</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 8-->
+        <div class="product-box">
+          <img src="img/bat8.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Hammer CANNON</h2>
+          <span class="price">$190</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 9-->
+        <div class="product-box">
+          <img src="img/bat9.jpg" alt="" class="product-img" />
+          <h2 class="product-title">SS SKY</h2>
+          <span class="price">$300</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 10-->
+        <div class="product-box">
+          <img src="img/bat10.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SS TON</h2>
+          <span class="price">$140</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 11-->
+        <div class="product-box">
+          <img src="img/bat11.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">New Balance DC PRO</h2>
+          <span class="price">$153</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 12-->
+        <div class="product-box">
+          <img src="img/bat12.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">New Balance DC</h2>
+          <span class="price">$198</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 13-->
+        <div class="product-box">
+          <img src="img/ball1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Hammer Core Red</h2>
+          <span class="price">$44</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 14-->
+        <div class="product-box">
+          <img src="img/ball2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Hammer Core White</h2>
+          <span class="price">$65</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 15-->
+        <div class="product-box">
+          <img src="img/ball3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SG Red</h2>
+          <span class="price">$60</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 16-->
+        <div class="product-box">
+          <img src="img/ball4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SG Pink</h2>
+          <span class="price">$25</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 17-->
+        <div class="product-box">
+          <img src="img/ball5.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Atlas Tennis</h2>
+          <span class="price">$32</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 18-->
+        <div class="product-box">
+          <img src="img/ball6.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Nivia Tennis</h2>
+          <span class="price">$25</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 19-->
+        <div class="product-box">
+          <img src="img/ball7.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">CA Supreme White</h2>
+          <span class="price">$20</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 20-->
+        <div class="product-box">
+          <img src="img/ball8.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">CA Supreme Red</h2>
+          <span class="price">$42</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 21-->
+        <div class="product-box">
+          <img src="img/ball9.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Trainning Pink</h2>
+          <span class="price">$30</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 22-->
+        <div class="product-box">
+          <img src="img/ball10.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Trainning Yellow</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 23-->
+        <div class="product-box">
+          <img src="img/shoe1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas Vector</h2>
+          <span class="price">$60</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 24-->
+        <div class="product-box">
+          <img src="img/shoe2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas 22YDS</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 25-->
+        <div class="product-box">
+          <img src="img/shoe3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra KC</h2>
+          <span class="price">$45</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 26-->
+        <div class="product-box">
+          <img src="img/shoe4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra KC 3.0</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 27-->
+        <div class="product-box">
+          <img src="img/shoe5.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Puma 22.2</h2>
+          <span class="price">$55</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 28-->
+        <div class="product-box">
+          <img src="img/shoe6.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Puma One8 22 FH VK</h2>
+          <span class="price">$58</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 29-->
+        <div class="product-box">
+          <img src="img/g1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra 4.1</h2>
+          <span class="price">$20</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 30-->
+        <div class="product-box">
+          <img src="img/g2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra 4.5</h2>
+          <span class="price">$25</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 31-->
+        <div class="product-box">
+          <img src="img/g3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">MRF Genius Elite</h2>
+          <span class="price">$55</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 32-->
+        <div class="product-box">
+          <img src="img/g4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">MRF Genius</h2>
+          <span class="price">$56</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 33-->
+        <div class="product-box">
+          <img src="img/g5.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">New Balance</h2>
+          <span class="price">$60</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 34-->
+        <div class="product-box">
+          <img src="img/g6.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">New Balance TC</h2>
+          <span class="price">$66</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 35-->
+        <div class="product-box">
+          <img src="img/pad1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">DSC CONDOR</h2>
+          <span class="price">$70</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 36-->
+        <div class="product-box">
+          <img src="img/pad2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">DSC CONDOR Motion</h2>
+          <span class="price">$80</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 37-->
+        <div class="product-box">
+          <img src="img/pad3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Hammer Core</h2>
+          <span class="price">$68</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 38-->
+        <div class="product-box">
+          <img src="img/pad4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Hammer Core youth</h2>
+          <span class="price">$98</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 39-->
+        <div class="product-box">
+          <img src="img/pad5.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SS CULBLITE</h2>
+          <span class="price">$110</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 40-->
+        <div class="product-box">
+          <img src="img/pad6.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SS</h2>
+          <span class="price">$105</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 41-->
+        <div class="product-box">
+          <img src="img/hel1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Shrey Armor</h2>
+          <span class="price">$220</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 42-->
+        <div class="product-box">
+          <img src="img/hel2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Shrey Match</h2>
+          <span class="price">$210</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 43-->
+        <div class="product-box">
+          <img src="img/hel3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Shrey STAR</h2>
+          <span class="price">$250</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 44-->
+        <div class="product-box">
+          <img src="img/hel4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Shrey Master</h2>
+          <span class="price">$200</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 45-->
+        <div class="product-box">
+          <img src="img/bag1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas INCURZA</h2>
+          <span class="price">$311</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 46-->
+        <div class="product-box">
+          <img src="img/bag2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas INCURZA 6.0</h2>
+          <span class="price">$200</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 47-->
+        <div class="product-box">
+          <img src="img/bag3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">New Balance</h2>
+          <span class="price">$244</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 48-->
+        <div class="product-box">
+          <img src="img/bag4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">New Balance DC 1080</h2>
+          <span class="price">$350</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 49-->
+        <div class="product-box">
+          <img src="img/bag5.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra</h2>
+          <span class="price">$300</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 50-->
+        <div class="product-box">
+          <img src="img/bag6.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra D65</h2>
+          <span class="price">$200</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 51-->
+        <div class="product-box">
+          <img src="img/keep1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">DSC</h2>
+          <span class="price">$80</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 52-->
+        <div class="product-box">
+          <img src="img/keep2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">DSC 2023</h2>
+          <span class="price">$95</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 53-->
+        <div class="product-box">
+          <img src="img/keep3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra</h2>
+          <span class="price">$100</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 54-->
+        <div class="product-box">
+          <img src="img/keep4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra 4.1</h2>
+          <span class="price">$150</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 55-->
+        <div class="product-box">
+          <img src="img/arm1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra 1000</h2>
+          <span class="price">$48</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 56-->
+        <div class="product-box">
+          <img src="img/arm2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra 2.0</h2>
+          <span class="price">$32</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 57-->
+        <div class="product-box">
+          <img src="img/arm3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SS</h2>
+          <span class="price">$44</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 58-->
+        <div class="product-box">
+          <img src="img/arm4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SS Pellara</h2>
+          <span class="price">$30</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 59-->
+        <div class="product-box">
+          <img src="img/che1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SS</h2>
+          <span class="price">$80</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 60-->
+        <div class="product-box">
+          <img src="img/che2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">SS Junior</h2>
+          <span class="price">$69</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 61-->
+        <div class="product-box">
+          <img src="img/che3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas</h2>
+          <span class="price">$87</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 62-->
+        <div class="product-box">
+          <img src="img/che4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Adidas XT</h2>
+          <span class="price">$72</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 63-->
+        <div class="product-box">
+          <img src="img/thi1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 64-->
+        <div class="product-box">
+          <img src="img/thi2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra 1000</h2>
+          <span class="price">$50</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 65-->
+        <div class="product-box">
+          <img src="img/t1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra</h2>
+          <span class="price">$100</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 66-->
+        <div class="product-box">
+          <img src="img/t2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra short sleeve</h2>
+          <span class="price">$100</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 67-->
+        <div class="product-box">
+          <img src="img/t3.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">KD IPL</h2>
+          <span class="price">$90</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 68-->
+        <div class="product-box">
+          <img src="img/t4.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra t-shirt</h2>
+          <span class="price">$100</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 69-->
+        <div class="product-box">
+          <img src="img/b1.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra trouser</h2>
+          <span class="price">$250</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+
+        <!--box 70-->
+        <div class="product-box">
+          <img src="img/b2.jpeg" alt="" class="product-img" />
+          <h2 class="product-title">Kookaburra slim fit</h2>
+          <span class="price">$200</span>
+          <i class="bx bx-cart-add add-cart"></i>
+        </div>
+      </div>
+    </section>
+
+    <button onclick="GotoTop()" id="go-up" title="Go to top">
+      <i class="bx bx-chevrons-up up-arrow"></i>
+    </button>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      function checkOut() {
+        window.open("checkout.html", "_self");
+      }
+
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+      });
+
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+
+      // Get the button
+      let mybutton = document.getElementById("go-up");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function GotoTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <script src="js/Main.js"></script>
+  </body>
+</html>

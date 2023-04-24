@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="editor.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="icon" type="image/png" href="images/pageicon.png" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">CRICHUB</h1>
+        <img src="img/logo.jpeg" class="logoimage" />
+      </div>
+      <input type="checkbox" id="nav_toggle" class="nav_toggle" />
+      <nav>
+        <ul class="navbar">
+          <li><a href="student2.html">Home</a></li>
+          <li><a href="comments.html">Comments</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="#site_map">Site Map</a></li>
+          <li><a href="#details">About Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+      <label for="nav_toggle" class="nav_toogle_label">
+        <span class="checkbox"></span>
+      </label>
+    </header>
+    <div class="header">
+      <h1>Page Editor</h1>
+    </div>
+
+    <hr class="first" />
+    <div class="details">
+      <img src="img/mypic.jpg" alt="" class="myimg" />
+      <h2>Name : Manuja Vikash Chandrarathna</h2>
+      <h4>Role : Student 01</h4>
+      <h4>The Following Pages Were Edited By Me !!!</h4>
+    </div>
+    <hr />
+    <div class="about">
+      <h3>Presentation Page</h3>
+      <p>The Presentation Page was Design By using HTML & CSS.</p>
+      <p>
+        A simple HTML framework, a linked CSS stylesheet, a flexbox layout,and
+        CSS styling were used in the strategy to produce an attractive Page.
+      </p>
+      <p>Animation were added to create interactivity.</p>
+      <p>To improve user interface, Google fonts were used.</p>
+
+      <button type="button" class="link-to-presn">
+        <a href="index.html" id="btn">Link To Presentation Page</a>
+      </button>
+    </div>
+    <hr />
+
+    <div class="about">
+      <h3>Buy products</h3>
+      <p>The Buy Product Page was design by using HTML, CSS, and JavaScript.</p>
+      <p>Animation were added to create smooth transition within page.</p>
+      <p>
+        Utilized CSS to properly align and size the photos and position them.
+      </p>
+      <p>
+        Utilized JavaScript to add things to the cart, purchase thoes items, and
+        display the notification that payment went through.
+      </p>
+      <p>To improve user interface, Google fonts were used.</p>
+      <p>The font-awesome library is used to add icons.</p>
+
+      <button type="button" class="link-to-presn">
+        <a href="shop.html" id="btn">Link To Buy products</a>
+      </button>
+    </div>
+    <hr />
+
+    <div class="about">
+      <h3>Checkout</h3>
+      <p>The Checkout Page was design by using HTML, CSS, and JavaScript.</p>
+      <p>CSS is utilized for form validation and accurate alignment.</p>
+      <p>
+        Used JavaScript to improves the form's usability, especially with the
+        modle popup indication after a successful payment.
+      </p>
+      <p>The font-awesome library is used to add icons.</p>
+      <p>To improve user interface, Google fonts were used.</p>
+
+      <button type="button" class="link-to-presn">
+        <a href="checkout.html" id="btn">Link To Checkout</a>
+      </button>
+      <hr />
+    </div>
+
+    <div class="about">
+      <h3>Additional Content Page</h3>
+      <p>The Additiona content Page was design by using HTML, and CSS.</p>
+      <p>
+        Utilized CSS to properly align and size the photos and position them.
+      </p>
+      <p>Improved the look by adding images.</p>
+      <p>Animation were added to create interactivity.</p>
+      <p>To improve user interface, Google fonts were used.</p>
+
+      <button type="button" class="link-to-presn">
+        <a href="additional.html" id="btn">Link To Additional Content Page</a>
+      </button>
+      <hr />
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("navbar.html");
+      });
+
+      $(function () {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap");
+
+* {
+  /* margin: 0%; */
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: silver;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+
+body {
+  background-color: black;
+  margin-bottom: 7px;
+  animation-name: anime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anime {
+  from {
+    opacity: 0%;
+    transform: skewX(100deg, 100deg);
+  }
+
+  to {
+    opacity: 100%;
+    transform: skewX(0deg, 0deg);
+  }
+}
+
+.header {
+  margin-top: 4.5rem;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  background-color: grey;
+  color: black;
+  font-size: 18px;
+  top: 0;
+}
+
+/* .first {
+  margin-top: 8rem;
+} */
+
+.myimg {
+  width: 15%;
+  height: 5%;
+  margin-top: 10rem;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+
+hr {
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  color: grey;
+}
+
+.details {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: silver;
+}
+
+.details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.details h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.about {
+  color: silver;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+
+.about p {
+  margin-top: 1rem;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.about h3 {
+  text-transform: uppercase;
+}
+
+.link-to-presn {
+  margin-top: 2rem;
+  padding: 10px;
+  background-color: silver;
+  cursor: pointer;
+  transition: 0.6s;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 4rem;
+}
+
+.link-to-presn:hover {
+  background-color: white;
+  box-shadow: 0 8px 16px 0 grey;
+}
+
+#btn {
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
